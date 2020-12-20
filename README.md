@@ -11,6 +11,8 @@ final_project-ichih2001 created by GitHub Classroom
       
       > 若三點共線，則重新輸入
 
+###做法:
+
 1.開一個[-1,1]*[-1,1]的坐標軸 
 	```  
 	axis([-1,1,-1,1])
