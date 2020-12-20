@@ -12,7 +12,9 @@ final_project-ichih2001 created by GitHub Classroom
       > 若三點共線，則重新輸入
 
 1.開一個[-1,1]*[-1,1]的坐標軸  
-	''' axis([-1,1,-1,1]) '''
+	''' 
+	axis([-1,1,-1,1])
+	'''
 		
 2.使用者輸入三個點並存入x,y矩陣 : [x,y]=ginput(3);
   (若三點共線，則重新輸入)
