@@ -1,7 +1,4 @@
-# final_project-ichih2001
-final_project-ichih2001 created by GitHub Classroom
-
-## Project : 任意給定平面上三點, 判斷外心是否在三角形內.
+# Project : 任意給定平面上三點, 判斷外心是否在三角形內.
 
   * input:在[-1,1]*[-1,1]的螢幕上點相異三點
   
