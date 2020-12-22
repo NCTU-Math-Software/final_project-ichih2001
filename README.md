@@ -1,7 +1,7 @@
 # final_project-ichih2001
 final_project-ichih2001 created by GitHub Classroom
 
-## Project 5 延伸:任意給定平面上三點, 判斷外心是否在三角形內.
+## Project : 任意給定平面上三點, 判斷外心是否在三角形內.
 
   * input:在[-1,1]*[-1,1]的螢幕上點相異三點
   
@@ -14,6 +14,7 @@ final_project-ichih2001 created by GitHub Classroom
 ### 做法:
 
 1.開一個[-1,1]*[-1,1]的坐標軸 
+
 	```  
 	axis([-1,1,-1,1])
 	``` 
@@ -25,6 +26,11 @@ final_project-ichih2001 created by GitHub Classroom
   > 若三點共線，則重新輸入
 
 3.標註三個點並連成三角形
+
+``` 
+plot(x,y,'o') 
+plot([x(1),x(2)],[y(1),y(2)],[x(2),x(3)],[y(2),y(3)],[x(1),x(3)],[y(1),y(3)])
+``` 
 
 4.求出外心座標
 
@@ -50,8 +56,8 @@ Ex.for 第1,2個點
 
 * 狀況:
 
-其中兩點x座標相同 or 取點均不在鉛直線上
+	其中兩點x座標相同 or 取點均不在鉛直線上
 
 * 注意：
 
-若有其中兩點x座標相同，則用斜率造出的方程式會有問題，需另外討論
+	若有其中兩點x座標相同，則用斜率造出的方程式會有問題，需另外討論
