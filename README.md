@@ -2,7 +2,7 @@
 
   * input : 
   	
-	circumcenter
+	>>circumcenter
 	
   	在[-1,1]*[-1,1]的螢幕上任意點相異三點
   
