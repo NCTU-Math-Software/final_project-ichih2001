@@ -1,8 +1,10 @@
 function circumcenter
 % Project 5 延伸：判斷三角形外心是否在三角形內
 % input:在螢幕上點相異三點
-% output:三角形和外心的座標圖以及判斷外心是否在三角形內
-%        (若外心超出螢幕範圍則不顯示)
+% output:三角形和外心的座標圖
+%        外心的座標
+%        判斷外心是否在三角形內
+%        三角形的外接圓
 %        (若三點共線，則重新輸入)
 
 axis([-1,1,-1,1])    % 開一個[-1,1]*[-1,1]的視窗
@@ -110,10 +112,23 @@ end
      
      if (m>=0)&(n>=0)&(l>=0) % 均大於0表示外心對三條線來說均同側
             disp('The circumcenter is in the triangle.')
+            
+           
      else
          % 未同時滿足不等式，則外心不在三角形內
          disp('The circumcenter is "not" in the triangle.')
-     end
-     
+         %------------------------------------------------------------
+         theta=0:360;
+
+           for ii=1:361
+               p(ii)=cx+(((cx-x(1))^2+(cy-y(1))^2)^(1/2))*cos(theta(ii)/180*pi);
+           end
+
+           for ii=1:361
+               q(ii)=cy+(((cx-x(1))^2+(cy-y(1))^2)^(1/2))*sin(theta(ii)/180*pi);
+           end
+
+           plot(p,q)
+           axis equal    
 end   
 end
